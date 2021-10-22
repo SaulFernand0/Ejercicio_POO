@@ -1,7 +1,7 @@
 import 'Fecha.dart';
-import 'Persona.dart';
+import 'Autor.dart';
 
-class Libro implements Persona, Fecha {
+class Libro implements Autor, Fecha {
   var id;
   var titulo;
   var autor;
@@ -15,24 +15,22 @@ class Libro implements Persona, Fecha {
   var year;
 
   @override
-  var apellidos_persona;
+  var apellidos_autor;
 
   @override
   var day;
 
   @override
-  var id_persona;
+  var id_autor;
 
   @override
   var month;
 
   @override
-  var nombres_persona;
+  var nombres_autor;
 
-  @override
-  var telefono_persona;
   void imprimir() {
     print(
-        "***TITULO: $titulo  \n La Edición es $edicion \n Nombre del autor es $nombres_persona $apellidos_persona \n ISBN : $editorial \n Fecha: $day / $month / $year; $lugar, PÁGINAS ***: $paginas");
+        "***TITULO: $titulo  \n La Edición es $edicion \n Nombre del autor es $nombres_autor $apellidos_autor \n ISBN : $editorial \n Fecha: $day / $month / $year; $lugar, PÁGINAS ***: $paginas");
   }
 }

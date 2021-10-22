@@ -12,10 +12,10 @@ main() {
   libro.titulo = title;
   print("Ingrese el nombre del autor:");
   var nompe = stdin.readLineSync();
-  libro.nombres_persona = nompe;
+  libro.nombres_autor = nompe;
   print("Ingrese el apellido del autor:");
   var apeper = stdin.readLineSync();
-  libro.apellidos_persona = apeper;
+  libro.apellidos_autor = apeper;
   print("Ingrese el nro de paginas:");
   var pag = stdin.readLineSync();
   libro.paginas = pag;
